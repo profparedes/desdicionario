@@ -69,11 +69,6 @@ const StyledTextField = styled(TextField)`
     &:hover {
       border-color: rgba(255, 255, 255, 0.2);
     }
-    
-    &.Mui-focused {
-      border-color: #00FFEF;
-      background: rgba(255, 255, 255, 0.08);
-    }
   }
   
   .MuiInputLabel-root {

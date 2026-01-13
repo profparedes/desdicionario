@@ -51,11 +51,6 @@ const StyledTextField = styled(TextField)`
     &:hover {
       border-color: rgba(255, 255, 255, 0.2);
     }
-    
-    &.Mui-focused {
-      border-color: #00FFEF;
-      background: rgba(255, 255, 255, 0.08);
-    }
   }
   
   .MuiInputLabel-root {
@@ -166,7 +161,7 @@ export const CreateGame = ({ onStartGame, onBack }: CreateGameProps) => {
     <Container>
       <FormContainer>
         <Title variant="h5">Criar Novo Jogo</Title>
-        
+
         {teamNames.map((name, index) => (
           <TeamInputContainer key={index}>
             <StyledTextField
@@ -183,13 +178,13 @@ export const CreateGame = ({ onStartGame, onBack }: CreateGameProps) => {
             )}
           </TeamInputContainer>
         ))}
-        
+
         <Box display="flex" justifyContent="center" marginTop="16px">
           <AddButton onClick={handleAddTeam}>
             <Add />
           </AddButton>
         </Box>
-        
+
         <StartButton
           variant="contained"
           onClick={handleStartGame}
@@ -197,13 +192,13 @@ export const CreateGame = ({ onStartGame, onBack }: CreateGameProps) => {
         >
           Iniciar jogo
         </StartButton>
-        
+
         <Button
           variant="contained"
           onClick={onBack}
           fullWidth
-          sx={{ 
-            marginTop: '12px', 
+          sx={{
+            marginTop: '12px',
             backgroundColor: '#e0e0e0',
             color: '#333',
             '&:hover': {
